@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizzes</title>
+    <title>Here are the quizzes</title>
 </head>
 <body>
-    <H1>Here are the Quizzes</H1>
+
+    <button id="startButton" >Start first quizz</button>
 </body>
+<style>
+    button {
+        display: flex;
+        justify-content: space-around;
+        width: 60px;
+        height: 60px;
+    }
+</style>
+<script>
+    document.getElementById('startButton').addEventListener('click', function() {
+        window.location.href = 'quizzes.html'; // Redirige a la página del quiz
+    });
+</script>
 </html>
